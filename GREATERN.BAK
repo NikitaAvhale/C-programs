@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int a,b,c;
+clrscr();
+cout<<"enter three numbers";
+cin>>a>>b>>c;
+if(a>b && a>c)
+{
+cout<<a<<" is greater than "<<b and <<c;
+}
+else if(b>c)
+{
+cout<<b<<" is greater than a and c"<<a<<c;
+}
+else
+{
+cout<<c<<" is grater than a and b"<<a<<c;
+}
+getch();
+return 0;
+}

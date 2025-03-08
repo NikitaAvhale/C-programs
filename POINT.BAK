@@ -1,0 +1,36 @@
+#include<iostream.h>
+#include<conio.h>
+#include<iomanip.h>
+class point
+{
+int x, y;
+public:
+point()
+{
+x=10;
+y=20;
+}
+point(int a, int b)
+{
+x=a;
+y=b;
+}
+point(point & p)
+{
+x=p.x;
+y=p.y;
+}
+void display()
+{
+cout<<"value of x is:"<<x<<endl;
+cout<<"value of y is:"<<y<<endl;
+}
+};
+void main()
+{
+point p1(30,50),p2(p1);
+clrscr();
+p1.display();
+p2.display();
+getch();
+}

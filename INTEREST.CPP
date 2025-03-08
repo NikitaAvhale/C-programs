@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+class simple_interest{
+float principle;
+float rate;
+int time;
+public:
+simple_interest(float p,int t, float r=9.5){
+principle=p;
+rate=r;
+time=t;
+}
+void calculate(){
+float total=0;
+total=((principle*rate*time)/100);
+cout<<(principle*rate*time)/100;
+cout<<endl<<principle<<endl<<rate<<endl<<time;
+cout<<"simple interest is"<<total;
+}
+};
+void main()
+{
+simple_interest s1(20000, 10);
+clrscr();
+s1.calculate();
+getch();
+}

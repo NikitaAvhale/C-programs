@@ -1,0 +1,36 @@
+#include<iostream.h>
+#include<conio.h>
+class Number
+{
+int x, y;
+public:
+Number()
+{
+x=10;
+y=20;
+}
+Number(int a, int b)
+{
+x=a;
+y=b;
+}
+void maximum()
+{
+if(x>y)
+{
+cout<<"\n x is greater"<<endl;
+}
+else{
+cout<<"\n y is greater"<<endl;
+}
+}
+};
+void main()
+{
+Number obj1, obj2(10, 20);
+clrscr();
+obj1.maximum();
+obj2.maximum();
+getch();
+}
+

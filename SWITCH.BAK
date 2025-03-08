@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+char ch;
+int a, b;
+cout<<"enter two numbers";
+cin>>a>>b;
+cout<<"enter the operator";
+cin>>ch;
+
+switch(ch)
+{
+case '+':
+cout<<a<<"+"<<b<<"="<<a+b;
+break;
+case '-':
+cout<<a<<"-"<<b<<"="<<a-b;
+break;
+case '*':
+cout<<a<<"*"<<b<<"="<<a*b;
+break;
+case '/':
+cout<<a<<"/"<<b<<"="<<a/b;
+break;
+default
+cout<<"you entered invalid operator";
+}
+getch();
+}
+
+

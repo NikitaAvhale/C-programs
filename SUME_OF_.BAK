@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+class sum_numbers
+{
+int n;
+int sum;
+public:
+class sum_numbers(int num)
+{
+n=num;
+sum=0;
+for(int i=1; i<=n; i++)
+{
+sum +=i;
+}
+}
+void display()
+{
+cout<<"sum of numbers from"<<n<<"is"<<sum<<endl;
+}
+};
+void main()
+{
+sum_numbers s1(20);
+clrscr();
+s1.display();
+getch();
+}
+

@@ -1,0 +1,12 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+float a, area;
+clrscr();
+cout<<"enter a radius of circle";
+cin>>a;
+area=3.14*a*a;
+cout<<"area of circle is:"<<area;
+getch();
+}

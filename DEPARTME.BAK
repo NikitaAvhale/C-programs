@@ -1,0 +1,57 @@
+#include<iostream.h>
+#include<conio.h>
+class college
+{
+private:
+int dept_id;
+char name;
+int establish_year;
+int no_of_faculty;
+int no_of_student;
+public:
+void getdata();
+void putdata();
+};
+void college::getdata()
+{
+	cout<<"enter dept_id"<<endl;
+	cin>>dept_id;
+	cout<<"enter name"<<endl;
+	cin>>name;
+	cout<<"enter establish year"<<endl;
+	cin>>establish_year;
+	cout<<"enter no_of_faculty"<<endl;
+	cin>>no_of_faculty;
+	cout<<"enter no. of student"<<endl;
+	cin>>no_of_student;
+}
+void college::putdata()
+{
+cout<<"department_id"<<dept_id<<"\n";
+cout<<"department_Name"<<name<<"\n";
+cout<<"establish_year"<<establish_year<<"\n";
+cout<<"enter no of faculty"<<no_of_faculty<<"\n";
+cout<<"enter no of student"<<no_of_student<<"\n";
+
+}
+void main()
+{
+ int n,i ;
+ clrscr();
+ cout<<"enter no. of departement";
+ cin>>n;
+ college c1[20];
+
+ for(i=0;i<=n;i++)
+ {
+ cout<<"enter the details of department"<<i+1<<":";
+ c1[i].getdata();
+ }
+ cout<<"department details";
+ for(int j=0;j<n;j++)
+ {
+ c1[j].putdata();
+ }
+
+getch();
+}

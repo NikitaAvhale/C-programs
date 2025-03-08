@@ -1,0 +1,34 @@
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+int rollno;
+char name[20];
+char branch[20];
+public:
+
+void getdata()
+{
+cout<<"enter rollno"<<endl;
+cin>>rollno;
+cout<<"enter name"<<endl;
+cin>>name;
+cout<<"enter class"<<endl;
+cin>>branch;
+}
+void putdata()
+{
+cout<<"Rollno"<<rollno<<"\n";
+cout<<"Name"<<name<<"\n";
+cout<<"Class"<<branch<<"\n";
+}
+};
+void main()
+{
+clrscr();
+ student s1;
+s1.getdata();
+s1.putdata();
+
+getch();
+}
